@@ -14,50 +14,6 @@ extern volatile long* g_pInterruptStatusRegister;
 extern volatile Counter* g_pRCounters;
 extern volatile long g_InterruptStatusMasks[4];
 
-INCLUDE_ASM("asm/slus_006.64/nonmatchings/psyq/libapi", FlushCache);
-
-INCLUDE_ASM("asm/slus_006.64/nonmatchings/psyq/libapi", func_80040464);
-
-INCLUDE_ASM("asm/slus_006.64/nonmatchings/psyq/libapi", OpenEvent);
-
-INCLUDE_ASM("asm/slus_006.64/nonmatchings/psyq/libapi", CloseEvent);
-
-INCLUDE_ASM("asm/slus_006.64/nonmatchings/psyq/libapi", TestEvent);
-
-INCLUDE_ASM("asm/slus_006.64/nonmatchings/psyq/libapi", EnableEvent);
-
-INCLUDE_ASM("asm/slus_006.64/nonmatchings/psyq/libapi", DisableEvent);
-
-INCLUDE_ASM("asm/slus_006.64/nonmatchings/psyq/libapi", UnDeliverEvent);
-
-INCLUDE_ASM("asm/slus_006.64/nonmatchings/psyq/libapi", EnterCriticalSection);
-
-INCLUDE_ASM("asm/slus_006.64/nonmatchings/psyq/libapi", ExitCriticalSection);
-
-INCLUDE_ASM("asm/slus_006.64/nonmatchings/psyq/libapi", SwEnterCriticalSection);
-
-INCLUDE_ASM("asm/slus_006.64/nonmatchings/psyq/libapi", SwExitCriticalSection);
-
-INCLUDE_ASM("asm/slus_006.64/nonmatchings/psyq/libapi", open);
-
-INCLUDE_ASM("asm/slus_006.64/nonmatchings/psyq/libapi", read);
-
-INCLUDE_ASM("asm/slus_006.64/nonmatchings/psyq/libapi", write);
-
-INCLUDE_ASM("asm/slus_006.64/nonmatchings/psyq/libapi", close);
-
-INCLUDE_ASM("asm/slus_006.64/nonmatchings/psyq/libapi", format);
-
-INCLUDE_ASM("asm/slus_006.64/nonmatchings/psyq/libapi", firstfile);
-
-INCLUDE_ASM("asm/slus_006.64/nonmatchings/psyq/libapi", nextfile);
-
-INCLUDE_ASM("asm/slus_006.64/nonmatchings/psyq/libapi", rename);
-
-INCLUDE_ASM("asm/slus_006.64/nonmatchings/psyq/libapi", erase);
-
-INCLUDE_ASM("asm/slus_006.64/nonmatchings/psyq/libapi", Krom2RawAdd);
-
 INCLUDE_ASM("asm/slus_006.64/nonmatchings/psyq/libapi", ChangeClearPAD);
 
 long SetRCnt(long spec, short target, long mode) {
