@@ -237,6 +237,7 @@ Sprintf = 0x8003FBF8;
 
 // PSY-Q Kernel / libapi
 FlushCache = 0x80040454;
+_bu_init = 0x80040464;
 OpenEvent = 0x80040474;
 CloseEvent = 0x80040484;
 TestEvent = 0x80040494;
